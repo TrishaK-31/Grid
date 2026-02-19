@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        #con{
+            height:100vh;
+            width: 100vw;
+            background-color:pink;
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(10,1fr);
+            
+    
+
+        }
+        .con1{
+            background-color: black;
+            grid-column:2/6 ;
+            grid-row:6/10 ;
+        
+        }
+        .con2{
+            background-color: black;
+            grid-column: 7/10;
+            grid-row: 2/7;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div class="con1"></div>
+        <div class="con2"></div>
+
+        
+
+    </div>
+</body>
+</html>

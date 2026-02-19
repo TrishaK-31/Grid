@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0%;
+        }
+        .con{
+            background-color: black;
+            height:100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: repeat(10,1fr);
+            grid-template-columns: repeat(10,1fr);
+            column-gap: 20px;
+        }
+        #con1{
+            background-color: bisque;
+            grid-row:3/9;
+            grid-column:2/6 ;
+        }
+        #con2{
+            background-color: bisque;
+            grid-row: 3/9;
+            grid-column: 6/10;
+        }
+        #con3{
+            background-color: bisque;
+            grid-column: 1/11;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div id="con1"></div>
+        <div id="con2"></div>
+        <div id="con3"></div>
+    </div>
+    
+</body>
+</html>
